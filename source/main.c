@@ -1,9 +1,10 @@
-/* --------------------------------------------------------------
-	Example file for the UART Library for the ATmega16M1/
-	ATmega32M1/ATmega64M1
-	
-	Author: Christoph Jurczyk	
--------------------------------------------------------------- */
+/**
+* @file main.c
+* @author Christoph Jurczyk
+* @data October 21, 2018
+* @brief Main file for ATmega64M1 UART example.
+*
+*/
 
 #define F_CPU 8000000UL
 
