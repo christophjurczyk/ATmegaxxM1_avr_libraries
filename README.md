@@ -1,4 +1,4 @@
-# ATmegaxxM1 UART Library
-UART library for the ATmega16M1, ATmega32M1 and ATmega64M1. 
+# ATmegaxxM1 UART, ADC and DAC Libraries
+UART, ADC and DAC libraries for the ATmega16M1, ATmega32M1 and ATmega64M1. 
 
-Have a look at the example main.c how to include the library. Library tested with an 8 MHz oscillator. If needed change `F_CPU` to your oscillator frequency.
+Have a look at the example main.cpp how to include the libraries. Libraries were tested with the internal 8 MHz oscillator. If needed change `F_CPU` to your oscillator frequency.

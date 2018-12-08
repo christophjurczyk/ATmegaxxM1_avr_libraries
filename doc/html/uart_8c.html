@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ATmega64M1 AVR UART: D:/Github/ATmega64M1_avr_uart/source/uart.c File Reference</title>
+<title>ATmega64M1 AVR UART, ADC and DAC: D:/Github/ATmega64M1_avr_uart/source/uart.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ATmega64M1 AVR UART
-   &#160;<span id="projectnumber">v1.0</span>
+   <div id="projectname">ATmega64M1 AVR UART, ADC and DAC
+   &#160;<span id="projectnumber">v2.0</span>
    </div>
-   <div id="projectbrief">UART library for the ATmega16M1, ATmega32M1 and ATmega64M1.</div>
+   <div id="projectbrief">UART, ADC and DAC libraries for the ATmega16M1, ATmega32M1 and ATmega64M1.</div>
   </td>
  </tr>
  </tbody>
@@ -101,7 +101,8 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains all functions for the UART communication. </p>
-<dl class="section author"><dt>Author</dt><dd>Christoph Jurczyk  October 21, 2018 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Christoph Jurczyk </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>October 21, 2018 </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aad9106704dca1eaa1969182fdf52f9f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad9106704dca1eaa1969182fdf52f9f6">&#9670;&nbsp;</a></span>uart_getline()</h2>
@@ -130,8 +131,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function to read line. </p>
-<p>Call this function to read a string until '<br />
-' termination. Example call: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> read_buffer[256];</div><div class="line"><span class="keywordflow">while</span>(<a class="code" href="uart_8c.html#aad9106704dca1eaa1969182fdf52f9f6">uart_getline</a>(read_buffer, 256) != EOF)</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>Call this function to read a string until newline termination. Example call: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> read_buffer[256];</div><div class="line"><span class="keywordflow">while</span>(<a class="code" href="uart_8c.html#aad9106704dca1eaa1969182fdf52f9f6">uart_getline</a>(read_buffer, 256) != EOF)</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">line</td><td>Is the buffer for the read line.</td></tr>
     <tr><td class="paramname">max</td><td>Maximum number of receiving characters.</td></tr>
@@ -231,7 +231,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 14:42:47 for ATmega64M1 AVR UART by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 8 2018 17:27:16 for ATmega64M1 AVR UART, ADC and DAC by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
