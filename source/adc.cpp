@@ -71,36 +71,36 @@ void adcInit(ADC_CLK_DIV clk_div_value)
 	switch(clk_div_value)
 	{		
 		case ADC_CLK_DIV_2:
-			ADCSRA &= !((1 << ADPS2)|(1 << ADPS1)|(1 << ADPS0));
+			ADCSRA &= !((1 << ADPS2)||(1 << ADPS1)||(1 << ADPS0));
 		break;
 		
 		case ADC_CLK_DIV_4:
-			ADCSRA &= !((1 << ADPS2)|(1 << ADPS0));
+			ADCSRA &= !((1 << ADPS2)||(1 << ADPS0));
 			ADCSRA |= (1 << ADPS1);
 		break;
 		
 		case ADC_CLK_DIV_8:
 			ADCSRA &= !(1 << ADPS2);
-			ADCSRA |= (1 << ADPS1)|(1 << ADPS0);
+			ADCSRA |= (1 << ADPS1)||(1 << ADPS0);
 		break;
 		
 		case ADC_CLK_DIV_16:
-			ADCSRA &= !((1 << ADPS1)|(1 << ADPS0));
+			ADCSRA &= !((1 << ADPS1)||(1 << ADPS0));
 			ADCSRA |= (1 << ADPS2);
 		break;
 		
 		case ADC_CLK_DIV_32:
 			ADCSRA &= !(1 << ADPS1);
-			ADCSRA |= (1 << ADPS2)|(1 << ADPS0);
+			ADCSRA |= (1 << ADPS2)||(1 << ADPS0);
 		break;
 		
 		case ADC_CLK_DIV_64:
 			ADCSRA &= !(1 << ADPS0);
-			ADCSRA |= (1 << ADPS2)|(1 << ADPS1);
+			ADCSRA |= (1 << ADPS2)||(1 << ADPS1);
 		break;
 		
 		case ADC_CLK_DIV_128:
-			ADCSRA |= (1 << ADPS2)|(1 << ADPS1)|(1 << ADPS0);
+			ADCSRA |= (1 << ADPS2)||(1 << ADPS1)||(1 << ADPS0);
 		break;
 	}
 	
